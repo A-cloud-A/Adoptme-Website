@@ -1,30 +1,98 @@
-h2{
-    color: #d56f3e;
-}
-span{
-    color: #9d6f24;
-}
-h4{
-    text-align: right;
-    color: #3c787e;
-}
-#pets{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+    text-align: center;
+  }
+  
+  #hero {
+    background-color: #eaeaea;
+    padding: 20px 0;
+  }
+  
+  #hero h1 span {
+    color: #ff5733;
+  }
+  
+  #pets {
+    margin: 20px auto;
+    width: 90%;
+  }
+  
+  .pet-gallery {
     display: flex;
-    justify-content: space-evenly;  
-}
-.card{
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    margin: 15px;
     padding: 10px;
-    margin: 10px;
-}
-img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
     width: 100%;
-    border-radius: 25px;
-}
-@media (max-width: 375.33px){
-    #pets{
-        flex-wrap: wrap;
-    }
-}
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card h3 {
+    color: #ff5733;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  #about {
+    background-color: #fff3e0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
