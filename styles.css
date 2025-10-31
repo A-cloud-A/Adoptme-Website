@@ -1,0 +1,66 @@
+/* AdoptMe Website - Additional Styles */
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Enhanced button styles */
+.btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #ff784d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    .pet-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Accessibility improvements */
+a:focus,
+button:focus {
+    outline: 2px solid #ff5733;
+    outline-offset: 2px;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in;
+}
+
