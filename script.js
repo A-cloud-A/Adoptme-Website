@@ -32,5 +32,42 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+// Contact form handling
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('contact-status');
+
+    if (!form) {
+        console.log('AdoptMe website loaded successfully!');
+        return;
+    }
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        status.textContent = '';
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+            status.textContent = 'Please fill out all fields.';
+            status.style.color = '#c0392b';
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            status.textContent = 'Please enter a valid email address.';
+            status.style.color = '#c0392b';
+            return;
+        }
+
+        // Simulate successful submission (no backend)
+        status.textContent = 'Thanks! Your message has been sent.';
+        status.style.color = '#2d7a46';
+        form.reset();
+    });
+});
+
 console.log('AdoptMe website loaded successfully!');
 
