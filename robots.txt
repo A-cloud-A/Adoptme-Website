@@ -1,0 +1,8 @@
+# Allow all crawlers by default
+User-agent: *
+Allow: /
+
+# Disallow common private paths (none currently)
+# Disallow: /admin/
+
+Sitemap: https://example.com/sitemap.xml

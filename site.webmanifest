@@ -1,0 +1,15 @@
+{
+  "name": "AdoptMe",
+  "short_name": "AdoptMe",
+  "start_url": "/ques21.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff5733",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
